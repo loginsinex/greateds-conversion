@@ -1,0 +1,21 @@
+
+include src\header.asm
+include src\registers.asm
+include src\vars.asm
+include src\const.asm
+include src\PRG00.asm
+include src\PRG01.asm
+include src\PRG02.asm
+include src\PRG03.asm
+include src\PRG04.asm
+include src\PRG05.asm
+include src\PRG06.asm
+include src\PRG07.asm
+incbin src\chr.bin
+incbin src\chr.bin
+incbin src\chr.bin
+incbin src\chr.bin
+incbin src\chr.bin
+incbin src\chr.bin
+incbin src\chr.bin
+incbin src\chr.bin
