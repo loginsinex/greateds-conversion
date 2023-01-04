@@ -8274,10 +8274,11 @@ LoadWaterEventMusEnvData:
 
 ;--------------------------------
 
-.PAD $FEB2,$FF
+.PAD $FEAF,$FF
 GetAreaDataAddrs:
 	LDA	AreaPointer
 	STA	svAreaPointer
+	JSR	UpdateAreaPtr
 	JMP	GetAreaAddresses
 
 LoopCmdE:
@@ -8381,6 +8382,8 @@ FindAreaPointer:
 	ADC	AreaNumber
 	TAY
 	LDA	AreaAddrOffsets, Y
+
+UpdateAreaPtr:
 	PHA
 	AND	#$7F
 	TAY
